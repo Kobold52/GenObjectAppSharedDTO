@@ -13,7 +13,7 @@ public struct LoginResponseDTO: Codable {
     public var token: String? = nil
     public var userId: UUID? = nil
     
-    init(error: Bool, reason: String? = nil, token: String? = nil, userId: UUID? = nil) {
+    public init(error: Bool, reason: String? = nil, token: String? = nil, userId: UUID? = nil) {
         self.error = error
         self.reason = reason
         self.token = token
